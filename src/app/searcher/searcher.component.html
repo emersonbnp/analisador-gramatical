@@ -1,0 +1,8 @@
+<div (click)="changeDisplay()" class="searcher">
+    <p>searcher</p>
+    <input [(ngModel)]="modelo.nome" (change)="change()" />
+    <h1>{{param}}</h1>
+    <div *ngIf="display">
+        <h1>{{param | lowercase }}</h1>
+    </div>
+</div>
